@@ -3,11 +3,9 @@ package kg.geektech.game.player.boss.boss.general.General;
 import kg.geektech.game.player.boss.boss.general.Boss.Boss;
 import kg.geektech.game.player.boss.boss.general.player.*;
 
-import java.util.Arrays;
-
 public class RPGGame {
     public static void startGame() {
-        Boss boss = new Boss(400, 30);
+        Boss boss = new Boss(1000, 30);
 
         Warrior warrior = new Warrior(100, 10);
         Medical medical = new Medical(100, 10 );
@@ -36,7 +34,7 @@ public class RPGGame {
 
     private static void heroerUserSuperAbillity(Player[] heroes, Boss boss){
         for (int i = 0; i <heroes.length; i++) {
-            heroes[i].userAbillitu(heroes,boss);
+            heroes[i].userAbility(heroes,boss);
 
         }
 

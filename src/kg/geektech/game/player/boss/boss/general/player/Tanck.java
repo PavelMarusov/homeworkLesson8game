@@ -12,7 +12,7 @@ public class Tanck extends Player implements HavingAbillity {
     }
 
     @Override
-    public void userAbillitu(Player[] player, Boss boss) {
+    public void userAbility(Player[] player, Boss boss) {
         Random r =  new Random();
         int number = r.nextInt(5)+3;
         player[2].setHealth(getHealth()-(boss.getDamage()+number));

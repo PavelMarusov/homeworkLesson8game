@@ -20,7 +20,7 @@ public class Medical extends Player {
     }
 
     @Override
-    public void userAbillitu(Player[] player, Boss boss) {
+    public void userAbility(Player[] player, Boss boss) {
         for (int i = 0; i <player.length; i++) {
             player[i].setHealth(player[i].getHealth() + healPoints);
 
